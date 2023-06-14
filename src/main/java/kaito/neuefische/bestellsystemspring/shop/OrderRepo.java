@@ -14,7 +14,7 @@ public class OrderRepo {
         this.orders = new HashMap<>();
     }
 
-    Order getOrder(String orderId) {
+    public Order getOrder(String orderId) {
         return orders.get(orderId);
     }
 

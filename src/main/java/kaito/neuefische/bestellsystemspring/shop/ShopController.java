@@ -34,8 +34,8 @@ public class ShopController {
     }
 
     @GetMapping("/orders/{orderId}")
-    public void getOrder(String orderId){
-        shopSystem.getOrder(orderId);
+    public Order getOrder(@PathVariable String orderId){
+        return shopSystem.getOrder(orderId);
     }
 
     @PostMapping("/orders/{orderId}")
